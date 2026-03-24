@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontakt zu Nils Karpf fuer Projekte, Kooperationen und Creator-Work.">
+  <title>Kontakt | Nils Karpf</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script defer src="./scripts/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="./index.html">NK</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menue</button>
+      <nav id="main-nav" class="main-nav" aria-label="Hauptnavigation">
+        <a href="./index.html">Startseite</a>
+        <a href="./arbeit.html">Arbeit</a>
+        <a href="./ueber-mich.html">Ueber mich</a>
+        <a class="active" href="./Kontakt.html">Kontakt</a>
+      </nav>
+      <div class="header-social" aria-label="Social Links">
+        <a href="https://instagram.com" target="_blank" rel="noreferrer">IG</a>
+        <a href="https://youtube.com" target="_blank" rel="noreferrer">YT</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero-contact">
+      <div class="container hero-content" data-reveal>
+        <p class="eyebrow">Kontakt</p>
+        <h1>Lass uns sprechen</h1>
+        <p class="hero-claim">Fuer Projekte, Kooperationen und Content-Partnerschaften.</p>
+      </div>
+    </section>
+
+    <section class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <h2>Lass uns zusammenarbeiten</h2>
+        <p>Schreib mir fuer neue Formate, Kampagnen oder Creator-Projekte.</p>
+      </div>
+
+      <section class="contact-wrap">
+        <form class="contact-form" action="#" method="post" data-reveal>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Dein Name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+          </div>
+
+          <div class="form-row">
+            <label for="nachricht">Nachricht</label>
+            <textarea id="nachricht" name="nachricht" placeholder="Erzaehl mir von deinem Projekt..." required></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Nachricht senden</button>
+        </form>
+
+        <aside class="contact-cards" data-reveal>
+          <article class="contact-card">
+            <h3>Direkter Kontakt</h3>
+            <p>E-Mail: hello@nilskarpf.com</p>
+            <p>Standort: Schweiz / Europa</p>
+          </article>
+          <article class="contact-card">
+            <h3>Socials</h3>
+            <p><a class="inline-link" href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></p>
+            <p><a class="inline-link" href="https://youtube.com" target="_blank" rel="noreferrer">YouTube</a></p>
+            <p><a class="inline-link" href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></p>
+          </article>
+          <article class="contact-card">
+            <h3>Antwortzeit</h3>
+            <p>Normalerweise antworte ich innerhalb von 24 bis 48 Stunden.</p>
+          </article>
+        </aside>
+      </section>
+    </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; <span id="year"></span> Nils Karpf. Let's create impact.</div>
+  </footer>
+</body>
+</html>
