@@ -150,7 +150,7 @@ a {
 }
 
 .page-hero-about::before {
-  background-image: url("../Images/Nils_transparent.png");
+  background-image: linear-gradient(rgba(97, 58, 34, 0.72), rgba(63, 35, 20, 0.72)), url("../Images/Nils_transparent.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 75% 75%;
