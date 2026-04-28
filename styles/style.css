@@ -166,6 +166,11 @@ a {
   max-width: 760px;
 }
 
+.hero-home .hero-content,
+.page-hero-work .hero-content {
+  margin-bottom: 8vh;
+}
+
 .eyebrow {
   margin: 0;
   color: rgba(255, 255, 255, 0.8);
