@@ -407,6 +407,38 @@ h2 {
   padding: 24px;
 }
 
+.contact-simple {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(180deg, var(--surface-soft), var(--surface));
+  border: 1px solid var(--line);
+}
+
+.contact-simple h2 {
+  margin-bottom: 14px;
+}
+
+.video-player-list {
+  margin-top: 28px;
+  display: grid;
+  gap: 12px;
+}
+
+.video-player-list h3 {
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #dcdad2;
+}
+
+.video-player {
+  width: min(700px, 100%);
+  border: 1px solid var(--line);
+  background: #000;
+}
+
 .contact-media {
   padding: 24px;
   background: linear-gradient(180deg, var(--surface-soft), var(--surface));
