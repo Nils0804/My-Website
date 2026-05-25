@@ -367,6 +367,10 @@ h2 {
   transition: transform 0.28s ease, border-color 0.28s ease;
 }
 
+.project-image-large {
+  grid-column: span 8;
+}
+
 .portfolio-item:hover {
   transform: translateY(-4px);
   border-color: rgba(255, 255, 255, 0.38);
@@ -515,6 +519,10 @@ textarea {
 
   .portfolio-item {
     grid-column: span 6;
+  }
+
+  .project-image-large {
+    grid-column: span 12;
   }
 }
 
