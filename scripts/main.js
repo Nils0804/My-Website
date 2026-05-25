@@ -44,18 +44,24 @@ if (filterControls && filterGrid) {
   const buttons = filterControls.querySelectorAll('.filter-btn');
   const cards = filterGrid.querySelectorAll('.portfolio-item');
 
+  const applyFilter = (filter) => {
+    buttons.forEach((btn) => {
+      btn.classList.toggle('active', btn.dataset.filter === filter);
+    });
+
+    cards.forEach((card) => {
+      const category = card.dataset.category;
+      const showCard = filter === 'all' || filter === category;
+      card.style.display = showCard ? '' : 'none';
+    });
+  };
+
+  applyFilter('video');
+
   buttons.forEach((button) => {
     button.addEventListener('click', () => {
       const filter = button.dataset.filter;
-
-      buttons.forEach((btn) => btn.classList.remove('active'));
-      button.classList.add('active');
-
-      cards.forEach((card) => {
-        const category = card.dataset.category;
-        const showCard = filter === 'all' || filter === category;
-        card.style.display = showCard ? '' : 'none';
-      });
+      applyFilter(filter);
     });
   });
 }
