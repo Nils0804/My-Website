@@ -529,15 +529,23 @@ h2 {
 }
 
 .internship-list li {
-  display: grid;
-  grid-template-columns: 120px 120px minmax(0, 1fr);
-  column-gap: 8px;
-  align-items: start;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .internship-list .item-date,
-.internship-list .item-company {
-  white-space: nowrap;
+.internship-list .item-company,
+.internship-list .item-role {
+  display: block;
+}
+
+.internship-list .item-date {
+  color: #f1efe8;
+}
+
+.internship-list .item-company,
+.internship-list .item-role {
+  color: var(--text-muted);
 }
 
 .sub-list {
