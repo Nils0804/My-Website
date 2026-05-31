@@ -554,23 +554,35 @@ h2 {
 }
 
 .internship-list li {
-  display: block;
-  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 130px 180px minmax(0, 1fr);
+  column-gap: 12px;
+  row-gap: 2px;
+  align-items: start;
+  margin-bottom: 12px;
 }
 
 .internship-list .item-date,
 .internship-list .item-company,
 .internship-list .item-role {
   display: block;
+  min-width: 0;
 }
 
 .internship-list .item-date {
   color: #f1efe8;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
-.internship-list .item-company,
+.internship-list .item-company {
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
 .internship-list .item-role {
   color: var(--text-muted);
+  overflow-wrap: anywhere;
 }
 
 .sub-list {
@@ -667,6 +679,16 @@ textarea {
 
   .project-song {
     grid-column: span 12;
+  }
+
+  .internship-list li {
+    grid-template-columns: 1fr;
+    row-gap: 3px;
+  }
+
+  .internship-list .item-company,
+  .internship-list .item-date {
+    white-space: normal;
   }
 }
 
