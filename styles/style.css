@@ -496,6 +496,18 @@ h2 {
   gap: 6px;
 }
 
+.internship-list li {
+  display: grid;
+  grid-template-columns: 120px 120px minmax(0, 1fr);
+  column-gap: 8px;
+  align-items: start;
+}
+
+.internship-list .item-date,
+.internship-list .item-company {
+  white-space: nowrap;
+}
+
 .sub-list {
   margin-top: 8px;
 }
