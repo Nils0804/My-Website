@@ -384,6 +384,10 @@ h2 {
   filter: saturate(90%);
 }
 
+.thumb-secondary {
+  margin-top: 12px;
+}
+
 .card-body {
   padding: 15px;
 }
