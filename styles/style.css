@@ -481,6 +481,30 @@ h2 {
   gap: 14px;
 }
 
+.about-extra-grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.clean-list {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  color: var(--text-muted);
+  display: grid;
+  gap: 6px;
+}
+
+.sub-list {
+  margin-top: 8px;
+}
+
+.about-extra-grid p {
+  margin: 14px 0 0;
+  color: var(--text-muted);
+}
+
 .timeline-item strong {
   display: block;
   color: #fff;
@@ -545,7 +569,8 @@ textarea {
 
   .featured-work,
   .split-grid,
-  .contact-wrap {
+  .contact-wrap,
+  .about-extra-grid {
     grid-template-columns: 1fr;
   }
 
